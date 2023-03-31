@@ -8,7 +8,7 @@ require_once('partials/_head.php');
 ?>
 
 <body>
-  <!-- Sidenav --><!-- For more projects: Visit codeastro.com  -->
+  <!-- Sidenav -->
   <?php
   require_once('partials/_sidebar.php');
   ?>
@@ -30,7 +30,7 @@ require_once('partials/_head.php');
     <div class="container-fluid mt--8">
       <!-- Table -->
       <div class="row">
-        <div class="col"><!-- For more projects: Visit codeastro.com  -->
+        <div class="col">
           <div class="card shadow">
             <div class="card-header border-0">
               Select On Any Product To Make An Order
@@ -45,7 +45,7 @@ require_once('partials/_head.php');
                     <th scope="col">Price</th>
                     <th scope="col">Action</th>
                   </tr>
-                </thead><!-- For more projects: Visit codeastro.com  -->
+                </thead>
                 <tbody>
                   <?php
                   $ret = "SELECT * FROM  rpos_products  ORDER BY `rpos_products`.`created_at` DESC ";
@@ -67,7 +67,7 @@ require_once('partials/_head.php');
                       </td>
                       <td><?php echo $prod->prod_code; ?></td>
                       <td><?php echo $prod->prod_name; ?></td>
-                      <td>$ <?php echo $prod->prod_price; ?></td>
+                      <td> <?php echo $prod->prod_price; ?></td>
                       <td>
                         <a href="make_oder.php?prod_id=<?php echo $prod->prod_id; ?>&prod_name=<?php echo $prod->prod_name; ?>&prod_price=<?php echo $prod->prod_price; ?>">
                           <button class="btn btn-sm btn-warning">
@@ -83,7 +83,7 @@ require_once('partials/_head.php');
             </div>
           </div>
         </div>
-      </div><!-- For more projects: Visit codeastro.com  -->
+      </div>
       <!-- Footer -->
       <?php
       require_once('partials/_footer.php');
@@ -95,5 +95,5 @@ require_once('partials/_head.php');
   require_once('partials/_scripts.php');
   ?>
 </body>
-<!-- For more projects: Visit codeastro.com  -->
+
 </html>

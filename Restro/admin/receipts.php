@@ -7,7 +7,7 @@ require_once('partials/_head.php');
 ?>
 
 <body>
-    <!-- Sidenav --><!-- For more projects: Visit codeastro.com  -->
+    <!-- Sidenav -->
     <?php
     require_once('partials/_sidebar.php');
     ?>
@@ -46,7 +46,7 @@ require_once('partials/_head.php');
                                         <th scope="col">Total Price</th>
                                         <th class="text-success" scope="col">Date</th>
                                         <th scope="col">Actions</th>
-                                    </tr><!-- For more projects: Visit codeastro.com  -->
+                                    </tr>
                                 </thead>
                                 <tbody>
                                     <?php
@@ -62,9 +62,9 @@ require_once('partials/_head.php');
                                             <th class="text-success" scope="row"><?php echo $order->order_code; ?></th>
                                             <td><?php echo $order->customer_name; ?></td>
                                             <td class="text-success"><?php echo $order->prod_name; ?></td>
-                                            <td>$ <?php echo $order->prod_price; ?></td>
+                                            <td><?php echo $order->prod_price; ?></td>
                                             <td class="text-success"><?php echo $order->prod_qty; ?></td>
-                                            <td>$ <?php echo $total; ?></td>
+                                            <td><?php echo $total; ?></td>
                                             <td><?php echo date('d/M/Y g:i', strtotime($order->created_at)); ?></td>
                                             <td>
                                                 <a target="_blank" href="print_receipt.php?order_code=<?php echo $order->order_code; ?>">
@@ -76,7 +76,7 @@ require_once('partials/_head.php');
                                             </td>
                                         </tr>
                                     <?php } ?>
-                                </tbody><!-- For more projects: Visit codeastro.com  -->
+                                </tbody>
                             </table>
                         </div>
                     </div>
@@ -93,5 +93,5 @@ require_once('partials/_head.php');
     require_once('partials/_scripts.php');
     ?>
 </body>
-<!-- For more projects: Visit codeastro.com  -->
+
 </html>

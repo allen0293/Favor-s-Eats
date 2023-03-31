@@ -30,7 +30,7 @@ require_once('partials/_head.php');
             <div class="col-lg-5 col-md-6">
               <h1 class="text-white">Restaurant Point Of Sale</h1>
             </div>
-          </div><!-- For more projects: Visit codeastro.com  -->
+          </div>
         </div>
       </div>
     </div>
@@ -46,7 +46,7 @@ require_once('partials/_head.php');
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                     </div>
-                    <input class="form-control" required name="staff_email" placeholder="Email" type="email">
+                    <input class="form-control" required name="staff_email" placeholder="Email" type="text" autocomplete="off">
                   </div>
                 </div>
                 <div class="form-group">
@@ -62,7 +62,7 @@ require_once('partials/_head.php');
                   <label class="custom-control-label" for=" customCheckLogin">
                     <span class="text-muted">Remember me</span>
                   </label>
-                </div><!-- For more projects: Visit codeastro.com  -->
+                </div>
                 <div class="text-center">
                   <button type="submit" name="login" class="btn btn-primary my-4">Log In</button>
                 </div>
@@ -77,7 +77,7 @@ require_once('partials/_head.php');
           </div>
         </div>
       </div>
-    </div><!-- For more projects: Visit codeastro.com  -->
+    </div>
   </div>
   <!-- Footer -->
   <?php
@@ -88,5 +88,5 @@ require_once('partials/_head.php');
   require_once('partials/_scripts.php');
   ?>
 </body>
-<!-- For more projects: Visit codeastro.com  -->
+
 </html>

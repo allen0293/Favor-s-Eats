@@ -49,13 +49,13 @@ while ($order = $res->fetch_object()) {
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-6">
                             <address>
-                                <strong>CodeAstro Lounge</strong>
+                                <strong>FAVOR-EATS</strong>
                                 <br>
-                                127-0-0-1
+                                127-111-111-222
                                 <br>
                                 4151 Willow Oaks Lane, Sugartown
                                 <br>
-                                (+000) 337-337-3069
+                                0921-5524-523 
                             </address>
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-6 text-right">

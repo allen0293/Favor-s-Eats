@@ -71,7 +71,7 @@ require_once('partials/_head.php');
         <div class="header-body">
         </div>
       </div>
-    </div><!-- For more projects: Visit codeastro.com  -->
+    </div>
     <!-- Page content -->
     <div class="container-fluid mt--8">
       <!-- Table -->
@@ -93,17 +93,16 @@ require_once('partials/_head.php');
                     <input type="text" name="pay_code" value="<?php echo $mpesaCode; ?>" class="form-control" value="">
                   </div>
                 </div>
-                <hr><!-- For more projects: Visit codeastro.com  -->
+                <hr>
                 <div class="form-row">
                   <div class="col-md-6">
                     <label>Amount ($)</label>
                     <input type="text" name="pay_amt" readonly value="<?php echo $total;?>" class="form-control">
-                  </div><!-- For more projects: Visit codeastro.com  -->
+                  </div>
                   <div class="col-md-6">
                     <label>Payment Method</label>
                     <select class="form-control" name="pay_method">
                         <option selected>Cash</option>
-                        <option>Paypal</option>
                     </select>
                   </div>
                 </div>
@@ -117,7 +116,7 @@ require_once('partials/_head.php');
             </div>
           </div>
         </div>
-      </div><!-- For more projects: Visit codeastro.com  -->
+      </div>
       <!-- Footer -->
       <?php
       require_once('partials/_footer.php');
@@ -129,5 +128,5 @@ require_once('partials/_head.php');
   require_once('partials/_scripts.php'); }
   ?>
 </body>
-<!-- For more projects: Visit codeastro.com  -->
+
 </html>

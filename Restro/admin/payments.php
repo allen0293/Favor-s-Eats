@@ -25,7 +25,7 @@ require_once('partials/_head.php');
     <?php
     require_once('partials/_sidebar.php');
     ?>
-    <!-- Main content --><!-- For more projects: Visit codeastro.com  -->
+    <!-- Main content -->
     <div class="main-content">
         <!-- Top navbar -->
         <?php
@@ -38,7 +38,7 @@ require_once('partials/_head.php');
                 <div class="header-body">
                 </div>
             </div>
-        </div><!-- For more projects: Visit codeastro.com  -->
+        </div>
         <!-- Page content -->
         <div class="container-fluid mt--8">
             <!-- Table -->
@@ -50,7 +50,7 @@ require_once('partials/_head.php');
                                 <i class="fas fa-plus"></i> <i class="fas fa-utensils"></i>
                                 Make A New Order
                             </a>
-                        </div><!-- For more projects: Visit codeastro.com  -->
+                        </div>
                         <div class="table-responsive">
                             <table class="table align-items-center table-flush">
                                 <thead class="thead-light">
@@ -77,7 +77,7 @@ require_once('partials/_head.php');
                                             <th class="text-success" scope="row"><?php echo $order->order_code; ?></th>
                                             <td><?php echo $order->customer_name; ?></td>
                                             <td><?php echo $order->prod_name; ?></td>
-                                            <td>$ <?php echo $total; ?></td>
+                                            <td><?php echo $total; ?></td>
                                             <td><?php echo date('d/M/Y g:i', strtotime($order->created_at)); ?></td>
                                             <td>
                                                 <a href="pay_order.php?order_code=<?php echo $order->order_code;?>&customer_id=<?php echo $order->customer_id;?>&order_status=Paid">
@@ -101,7 +101,7 @@ require_once('partials/_head.php');
                         </div>
                     </div>
                 </div>
-            </div><!-- For more projects: Visit codeastro.com  -->
+            </div>
             <!-- Footer -->
             <?php
             require_once('partials/_footer.php');
@@ -113,5 +113,5 @@ require_once('partials/_head.php');
     require_once('partials/_scripts.php');
     ?>
 </body>
-<!-- For more projects: Visit codeastro.com  -->
+
 </html>

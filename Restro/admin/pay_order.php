@@ -77,7 +77,7 @@ require_once('partials/_head.php');
     <!-- Page content -->
     <div class="container-fluid mt--8">
       <!-- Table -->
-      <div class="row"><!-- For more projects: Visit codeastro.com  -->
+      <div class="row">
         <div class="col">
           <div class="card shadow">
             <div class="card-header border-0">
@@ -98,18 +98,17 @@ require_once('partials/_head.php');
                 <hr>
                 <div class="form-row">
                   <div class="col-md-6">
-                    <label>Amount ($)</label>
+                    <label>Amount</label>
                     <input type="text" name="pay_amt" readonly value="<?php echo $total;?>" class="form-control">
                   </div>
                   <div class="col-md-6">
                     <label>Payment Method</label>
                     <select class="form-control" name="pay_method">
                         <option selected>Cash</option>
-                        <option>Paypal</option>
                     </select>
                   </div>
                 </div>
-                <br><!-- For more projects: Visit codeastro.com  -->
+                <br>
                 <div class="form-row">
                   <div class="col-md-6">
                     <input type="submit" name="pay" value="Pay Order" class="btn btn-success" value="">
@@ -131,5 +130,5 @@ require_once('partials/_head.php');
   require_once('partials/_scripts.php'); }
   ?>
 </body>
-<!-- For more projects: Visit codeastro.com  -->
+
 </html>

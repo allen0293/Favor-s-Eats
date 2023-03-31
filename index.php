@@ -70,14 +70,13 @@
     <div class="flex-center position-ref full-height">
         <div class="content">
             <div class="title m-b-md">
-                Restaurant POS
+                FAVOR-EATS
             </div>
 
             <div class="links">
 			<!-- For more projects: Visit codeastro.com  -->
                 <a href="Restro/admin/">Admin Log In</a>
                 <a href="Restro/cashier/">Cashier Log In</a>
-                <a href="Restro/customer">Customer Log In</a>
             </div>
         </div>
     </div>

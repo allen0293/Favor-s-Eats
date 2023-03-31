@@ -30,7 +30,7 @@ require_once('partials/_head.php');
         <?php
         require_once('partials/_topnav.php');
         ?>
-        <!-- Header --><!-- For more projects: Visit codeastro.com  -->
+        <!-- Header -->
         <div style="background-image: url(../admin/assets/img/theme/restro00.jpg); background-size: cover;" class="header  pb-8 pt-5 pt-md-8">
         <span class="mask bg-gradient-dark opacity-8"></span>
             <div class="container-fluid">
@@ -44,7 +44,7 @@ require_once('partials/_head.php');
             <div class="row">
                 <div class="col">
                     <div class="card shadow">
-                        <div class="card-header border-0"><!-- For more projects: Visit codeastro.com  -->
+                        <div class="card-header border-0">
                             Food Items
                             <!-- <a href="add_product.php" class="btn btn-outline-success">
                                 <i class="fas fa-utensils"></i>
@@ -62,7 +62,7 @@ require_once('partials/_head.php');
                                         <th scope="col">Action</th>
                                     </tr>
                                 </thead>
-                                <tbody><!-- For more projects: Visit codeastro.com  -->
+                                <tbody>
                                     <?php
                                     $ret = "SELECT * FROM  rpos_products  ORDER BY `rpos_products`.`created_at` DESC ";
                                     $stmt = $mysqli->prepare($ret);
@@ -83,7 +83,7 @@ require_once('partials/_head.php');
                                             </td>
                                             <td><?php echo $prod->prod_code; ?></td>
                                             <td><?php echo $prod->prod_name; ?></td>
-                                            <td>$ <?php echo $prod->prod_price; ?></td>
+                                            <td> <?php echo $prod->prod_price; ?></td>
                                             <td>
                                                 <a href="update_product.php?update=<?php echo $prod->prod_id; ?>">
                                                     <button class="btn btn-sm btn-primary">
@@ -96,7 +96,7 @@ require_once('partials/_head.php');
                                     <?php } ?>
                                 </tbody>
                             </table>
-                        </div><!-- For more projects: Visit codeastro.com  -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -111,5 +111,5 @@ require_once('partials/_head.php');
     require_once('partials/_scripts.php');
     ?>
 </body>
-<!-- For more projects: Visit codeastro.com  -->
+
 </html>

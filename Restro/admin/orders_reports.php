@@ -7,7 +7,7 @@ require_once('partials/_head.php');
 ?>
 
 <body>
-    <!-- Sidenav --><!-- For more projects: Visit codeastro.com  -->
+    <!-- Sidenav -->
     <?php
     require_once('partials/_sidebar.php');
     ?>
@@ -33,7 +33,7 @@ require_once('partials/_head.php');
                     <div class="card shadow">
                         <div class="card-header border-0">
                             Orders Records
-                        </div><!-- For more projects: Visit codeastro.com  -->
+                        </div>
                         <div class="table-responsive">
                             <table class="table align-items-center table-flush">
                                 <thead class="thead-light">
@@ -62,9 +62,9 @@ require_once('partials/_head.php');
                                             <th class="text-success" scope="row"><?php echo $order->order_code; ?></th>
                                             <td><?php echo $order->customer_name; ?></td>
                                             <td class="text-success"><?php echo $order->prod_name; ?></td>
-                                            <td>$ <?php echo $order->prod_price; ?></td>
+                                            <td> <?php echo $order->prod_price; ?></td>
                                             <td class="text-success"><?php echo $order->prod_qty; ?></td>
-                                            <td>$ <?php echo $total; ?></td>
+                                            <td> <?php echo $total; ?></td>
                                             <td><?php if ($order->order_status == '') {
                                                     echo "<span class='badge badge-danger'>Not Paid</span>";
                                                 } else {
@@ -78,7 +78,7 @@ require_once('partials/_head.php');
                         </div>
                     </div>
                 </div>
-            </div><!-- For more projects: Visit codeastro.com  -->
+            </div>
             <!-- Footer -->
             <?php
             require_once('partials/_footer.php');
@@ -90,5 +90,5 @@ require_once('partials/_head.php');
     require_once('partials/_scripts.php');
     ?>
 </body>
-<!-- For more projects: Visit codeastro.com  -->
+
 </html>

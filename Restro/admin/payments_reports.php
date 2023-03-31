@@ -7,7 +7,6 @@ require_once('partials/_head.php');
 ?>
 
 <body>
-    <!-- Sidenav --><!-- For more projects: Visit codeastro.com  -->
     <?php
     require_once('partials/_sidebar.php');
     ?>
@@ -39,12 +38,12 @@ require_once('partials/_head.php');
                                 <thead class="thead-light">
                                     <tr>
                                         <th class="text-success" scope="col">Payment Code</th>
-                                        <th scope="col">Payment Method</th>
-                                        <th class="text-success" scope="col">Order Code</th>
+
+                                        <th class="" scope="col">Order Code</th>
                                         <th scope="col">Amount Paid</th>
                                         <th class="text-success" scope="col">Date Paid</th>
                                     </tr>
-                                </thead><!-- For more projects: Visit codeastro.com  -->
+                                </thead>
                                 <tbody>
                                     <?php
                                     $ret = "SELECT * FROM  rpos_payments ORDER BY `created_at` DESC ";
@@ -57,21 +56,18 @@ require_once('partials/_head.php');
                                             <th class="text-success" scope="row">
                                                 <?php echo $payment->pay_code; ?>
                                             </th>
-                                            <th scope="row">
-                                                <?php echo $payment->pay_method; ?>
-                                            </th>
-                                            <td class="text-success">
+                                            <td class="">
                                                 <?php echo $payment->order_code; ?>
                                             </td>
                                             <td>
-                                                $ <?php echo $payment->pay_amt; ?>
+                                                 <?php echo $payment->pay_amt; ?>
                                             </td>
                                             <td class="text-success">
                                                 <?php echo date('d/M/Y g:i', strtotime($payment->created_at)) ?>
                                             </td>
                                         </tr>
                                     <?php } ?>
-                                </tbody><!-- For more projects: Visit codeastro.com  -->
+                                </tbody>
                             </table>
                         </div>
                     </div>
@@ -88,5 +84,5 @@ require_once('partials/_head.php');
     require_once('partials/_scripts.php');
     ?>
 </body>
-<!-- For more projects: Visit codeastro.com  -->
+
 </html>
