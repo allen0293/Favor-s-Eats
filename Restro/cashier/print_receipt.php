@@ -86,8 +86,8 @@ while ($order = $res->fetch_object()) {
                                     <td class="col-md-9"><em> <?php echo $order->prod_name; ?> </em></h4>
                                     </td>
                                     <td class="col-md-1" style="text-align: center"> <?php echo $order->prod_qty; ?></td>
-                                    <td class="col-md-1 text-center">$<?php echo $order->prod_price; ?></td>
-                                    <td class="col-md-1 text-center">$<?php echo $total; ?></td>
+                                    <td class="col-md-1 text-center"><?php echo $order->prod_price; ?></td>
+                                    <td class="col-md-1 text-center"><?php echo $total; ?></td>
                                 </tr>
                                 <tr>
                                     <td>   </td>
@@ -96,17 +96,12 @@ while ($order = $res->fetch_object()) {
                                         <p>
                                             <strong>Subtotal: </strong>
                                         </p>
-                                        <p>
-                                            <strong>Tax: </strong>
-                                        </p>
                                     </td>
                                     <td class="text-center">
                                         <p>
-                                            <strong>$<?php echo $total; ?></strong>
+                                            <strong><?php echo $total; ?></strong>
                                         </p>
-                                        <p>
-                                            <strong>14%</strong>
-                                        </p>
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -116,7 +111,7 @@ while ($order = $res->fetch_object()) {
                                         <h4><strong>Total: </strong></h4>
                                     </td>
                                     <td class="text-center text-danger">
-                                        <h4><strong>$<?php echo $total; ?></strong></h4>
+                                        <h4><strong><?php echo $total; ?></strong></h4>
                                     </td>
                                 </tr>
                             </tbody>
