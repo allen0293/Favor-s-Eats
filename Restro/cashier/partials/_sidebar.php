@@ -16,7 +16,7 @@ while ($staff_id = $res->fetch_object()) {
       </button>
       <!-- Brand -->
       <a class="navbar-brand pt-0" href="dashboard.php">
-        <img src="../admin/assets/img/brand/repos.png" class="navbar-brand-img" alt="...">
+      <h3>FAVOR-EATS</h3>
       </a>
       <!-- User -->
       <ul class="nav align-items-center d-md-none">
